@@ -1,4 +1,4 @@
-(define (Script-fu-filter-disco inImage inDrawable inGradient inReverse)
+(define (Script-fu-filter-disco inImage inDrawable inGradient inReverse inSpecial)
     ; condição verdadeira caso a opção de reverter seja ativada
     (if (= inReverse 1)
         ; invertendo a cor da imagem, mais fácil que inverter direção do gradiente, mais prático
@@ -26,7 +26,6 @@
                     )
                 )
             )
-
         )
         ; iniciando gravação dos passos para o histórico de desfazer do gimp:
         (gimp-image-undo-group-start inImage)
@@ -34,7 +33,21 @@
         (gimp-item-set-name value-layer "Disco Cover")
         ; inserindo camada no gimp
         (gimp-image-insert-layer inImage value-layer 0 0)
-        ; definindo gradiente escolhino no contexto geral do gimp
+        ; definindo gradiente escolhino no contexto geral do gimp (de forma meio burra mas estou aprendendo)
+        (if (= inSpecial 1)
+            ; substitui o valor do gradiente anterior pelo selecionado na lista
+            (set! inGradient "degrade01")
+        )
+        (if (= inSpecial 2)
+            ; substitui o valor do gradiente anterior pelo selecionado na lista
+            (set! inGradient "degrade02")
+        )
+        (if (= inSpecial 3)
+            ; substitui o valor do gradiente anterior pelo selecionado na lista
+            (set! inGradient "degrade03")
+        )
+
+        ; definir o contexto do gradiente selecionado:
         (gimp-context-set-gradient inGradient)
         ; remapeando as cores da camada inserida, usando gradiente de contexto do gimp
         (plug-in-gradmap TRUE inImage value-layer)
@@ -61,18 +74,19 @@
 )
 
 (script-fu-register
-"Script-fu-filter-disco"                    ;nome da função
-"disco cover"                               ;nome da ferramenta
-"Cria um efeito de capa de disco dos anos 80 e 90."    ;descrição
-"fabriciocybershell"                        ;autor
-"copyright 2025, Fabrício"                  ;copyright notice
-"March 19, 2025"                            ;data de criação
-"RGB* GRAY*"                                ;tipos de imagens suportadas
-SF-IMAGE       "Image"          0
-SF-DRAWABLE    "Current Layer"  0
-SF-GRADIENT    "String"         '("Deep Sea" "Incandescent") ; "Incandescent"
-SF-TOGGLE      "Gradient reverse" FALSE
-; SF-TOGGLE      "Adicionar Ruído"  TRUE
+    "Script-fu-filter-disco"                    ;nome da função
+    "disco cover"                               ;nome da ferramenta
+    "Cria um efeito de capa de disco dos anos 80 e 90."    ;descrição
+    "fabriciocybershell"                        ;autor
+    "copyright 2025, Fabrício"                  ;copyright notice
+    "March 19, 2025"                            ;data de criação
+    "RGB* GRAY*"                                ;tipos de imagens suportadas
+    SF-IMAGE       "Image"          0
+    SF-DRAWABLE    "Current Layer"  0
+    SF-GRADIENT    "String"         "Deep Sea" ; "Incandescent"
+    SF-TOGGLE      "Gradient reverse" TRUE
+    SF-OPTION "label" '("Selecione um gradiente personalizado" "degrade01" "degrade02" "degrade03")
+    ; SF-TOGGLE      "Adicionar Ruído"  TRUE
 )
 
 (script-fu-menu-register "Script-fu-filter-disco" "<Image>/Filters/90's Style")
