@@ -70,7 +70,7 @@
 "RGB* GRAY*"                                ;tipos de imagens suportadas
 SF-IMAGE       "Image"          0
 SF-DRAWABLE    "Current Layer"  0
-SF-GRADIENT    "String"         "Deep Sea" ; "Incandescent"
+SF-GRADIENT    "String"         '("Deep Sea" "Incandescent") ; "Incandescent"
 SF-TOGGLE      "Gradient reverse" FALSE
 ; SF-TOGGLE      "Adicionar Ruído"  TRUE
 )
