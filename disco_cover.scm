@@ -81,7 +81,7 @@
     "fabriciocybershell"                         ;autor
     "copyright 2025, Fabrício"                   ;copyright notice
     "March 19, 2025"                             ;data de criação
-    "RGB* GRAY*"                                 ;tipos de imagens suportadas
+    "RGB*"                                       ;tipos de imagens suportadas
     SF-IMAGE       "Image"            0          ; obtém a imagem atual
     SF-DRAWABLE    "Current Layer"    0          ; obtém a camada atual
     SF-GRADIENT    "String"           "degrade01" ; "Incandescent"
