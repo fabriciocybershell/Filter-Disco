@@ -4,6 +4,7 @@
         ; invertendo a cor da imagem, mais fácil que inverter direção do gradiente, mais prático
         (gimp-invert inDrawable)
     )
+
     (let* 
         (
             ; criando camda com a cópia da imagem:
@@ -74,19 +75,19 @@
 )
 
 (script-fu-register
-    "Script-fu-filter-disco"                    ;nome da função
-    "disco cover"                               ;nome da ferramenta
+    "Script-fu-filter-disco"                     ;nome da função
+    "disco cover"                                ;nome da ferramenta
     "Cria um efeito de capa de disco dos anos 80 e 90."    ;descrição
-    "fabriciocybershell"                        ;autor
-    "copyright 2025, Fabrício"                  ;copyright notice
-    "March 19, 2025"                            ;data de criação
-    "RGB* GRAY*"                                ;tipos de imagens suportadas
-    SF-IMAGE       "Image"          0
-    SF-DRAWABLE    "Current Layer"  0
-    SF-GRADIENT    "String"         "Deep Sea" ; "Incandescent"
-    SF-TOGGLE      "Gradient reverse" TRUE
-    SF-OPTION "label" '("Selecione um gradiente personalizado" "degrade01" "degrade02" "degrade03")
-    ; SF-TOGGLE      "Adicionar Ruído"  TRUE
+    "fabriciocybershell"                         ;autor
+    "copyright 2025, Fabrício"                   ;copyright notice
+    "March 19, 2025"                             ;data de criação
+    "RGB* GRAY*"                                 ;tipos de imagens suportadas
+    SF-IMAGE       "Image"            0          ; obtém a imagem atual
+    SF-DRAWABLE    "Current Layer"    0          ; obtém a camada atual
+    SF-GRADIENT    "String"           "degrade01" ; "Incandescent"
+    SF-TOGGLE      "Gradient reverse" TRUE       ; informa se o gradiente deve ser aplicado de trás para frente
+    SF-OPTION      "label"            '("Selecione um gradiente personalizado" "degrade01" "degrade02" "degrade03") ; lista de gradientes personalizados
+    ; SF-TOGGLE      "Adicionar Poeira" TRUE       ; adição de ruído com efeito poeira (alterar depois para nível de poeira, não será removido)
 )
 
 (script-fu-menu-register "Script-fu-filter-disco" "<Image>/Filters/90's Style")
