@@ -47,6 +47,14 @@
             ; substitui o valor do gradiente anterior pelo selecionado na lista
             (set! inGradient "degrade03")
         )
+        (if (= inSpecial 4)
+            ; substitui o valor do gradiente anterior pelo selecionado na lista
+            (set! inGradient "degrade04")
+        )
+        (if (= inSpecial 5)
+            ; substitui o valor do gradiente anterior pelo selecionado na lista
+            (set! inGradient "degrade05")
+        )
 
         ; definir o contexto do gradiente selecionado:
         (gimp-context-set-gradient inGradient)
@@ -86,7 +94,7 @@
     SF-DRAWABLE    "Current Layer"    0          ; obtém a camada atual
     SF-GRADIENT    "String"           "degrade01" ; "Incandescent"
     SF-TOGGLE      "Gradient reverse" TRUE       ; informa se o gradiente deve ser aplicado de trás para frente
-    SF-OPTION      "label"            '("Selecione um gradiente personalizado" "degrade01" "degrade02" "degrade03") ; lista de gradientes personalizados
+    SF-OPTION      "label"            '("Selecione um gradiente personalizado" "degrade01" "degrade02" "degrade03" "degrade04" "degrade05") ; lista de gradientes personalizados
     ; SF-TOGGLE      "Adicionar Poeira" TRUE       ; adição de ruído com efeito poeira (alterar depois para nível de poeira, não será removido)
 )
 
