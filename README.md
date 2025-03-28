@@ -13,6 +13,7 @@ Exeplos de antes e depois: (ainda tenho que buscar bons exemplos que sejam livre
 primeiro você deve mover os gradientes para o seu gimp, sem eles os gradientes que criei especialmente para este script não irão funcionar (pesar dele permitir você selecionar qualquer gradiente disponível pelo gimp).
 
 mova para o diretório relacionado ao seu sistema, para Linux:
-```/home/fabriciocybershell/.config/GIMP/2.10/gradients/```
+```${HOME}/.config/GIMP/version/gradients/```
 
-<!--```${HOME}/.config/GIMP/version/scripts/```-->
+para adicionar os scripts, você pode utilizar um diretório a sua escolha, ou usar o diretório padrão do gimp em:
+```${HOME}/.config/GIMP/version/scripts/```
