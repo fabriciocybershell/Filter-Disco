@@ -35,47 +35,12 @@
         ; inserindo camada no gimp
         (gimp-image-insert-layer inImage value-layer 0 0)
         ; definindo gradiente escolhino no contexto geral do gimp (de forma meio burra mas estou aprendendo)
-        (if (= inSpecial 1)
-            ; substitui o valor do gradiente anterior pelo selecionado na lista
-            (set! inGradient "degrade01")
+        (if (and (>= inSpecial 1) (<= inSpecial 9))
+            (set! inGradient (string-append "degrade0" (number->string inSpecial)))
         )
-        (if (= inSpecial 2)
-            ; substitui o valor do gradiente anterior pelo selecionado na lista
-            (set! inGradient "degrade02")
+        (if (and (>= inSpecial 10) (<= inSpecial 99))
+            (set! inGradient (string-append "degrade" (number->string inSpecial)))
         )
-        (if (= inSpecial 3)
-            ; substitui o valor do gradiente anterior pelo selecionado na lista
-            (set! inGradient "degrade03")
-        )
-        (if (= inSpecial 4)
-            ; substitui o valor do gradiente anterior pelo selecionado na lista
-            (set! inGradient "degrade04")
-        )
-        (if (= inSpecial 5)
-            ; substitui o valor do gradiente anterior pelo selecionado na lista
-            (set! inGradient "degrade05")
-        )
-        (if (= inSpecial 6)
-            ; substitui o valor do gradiente anterior pelo selecionado na lista
-            (set! inGradient "degrade06")
-        )
-        (if (= inSpecial 7)
-            ; substitui o valor do gradiente anterior pelo selecionado na lista
-            (set! inGradient "degrade07")
-        )
-        (if (= inSpecial 8)
-            ; substitui o valor do gradiente anterior pelo selecionado na lista
-            (set! inGradient "degrade08")
-        )
-        (if (= inSpecial 9)
-            ; substitui o valor do gradiente anterior pelo selecionado na lista
-            (set! inGradient "degrade09")
-        )
-        (if (= inSpecial 10)
-            ; substitui o valor do gradiente anterior pelo selecionado na lista
-            (set! inGradient "degrade10")
-        )
-
         ; definir o contexto do gradiente selecionado:
         (gimp-context-set-gradient inGradient)
         ; remapeando as cores da camada inserida, usando gradiente de contexto do gimp
