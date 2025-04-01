@@ -80,7 +80,6 @@
     SF-GRADIENT    "String"           "degrade01"  ; "Incandescent"
     SF-TOGGLE      "Gradient reverse" FALSE        ; informa se o gradiente deve ser aplicado de trás para frente
     SF-OPTION      "label"            '("Selecione um gradiente personalizado" "degrade01" "degrade02" "degrade03" "degrade04" "degrade05"  "degrade06"  "degrade07"  "degrade08"  "degrade09"  "degrade10") ; lista de gradientes personalizados
-    ; SF-TOGGLE      "Adicionar Poeira" TRUE       ; adição de ruído com efeito poeira (alterar depois para nível de poeira, não será removido)
 )
 
 (script-fu-menu-register "Script-fu-filter-disco" "<Image>/Filters/90's Style")
