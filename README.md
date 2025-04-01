@@ -7,7 +7,19 @@ este script é um Plug-in que serve para que outras pessoas possam aplicar minha
 
 o script anota as suas etapas no histórico de desfazer, e as mudanças são realizadas iguais a um procedimento feito manualmente, isso te permite estudar como o efeito é criado, e também a modificar e ajustar o efeito após ser aplicado, alterando os níveis de oparcidade da camada de "Poeira", alterar seu modo de camada, e até mesmo a da camada "Disco Cover", mesclando as cores remapeadas com os tons da original.
 
-Exeplos de antes e depois: (ainda tenho que buscar bons exemplos que sejam livres para uso ou de autoria própria, a fazer ...)
+Exeplos de antes (Imagem em ecala de cinza) e depois (com filtro aplicado), funciona com imagens coloridas normalmente:
+![original]("imagens/disco cover.png" "Original")
+![degrade01]("imagens/disco cover01.png" "Degrade01")
+![degrade02]("imagens/disco cover01.png" "Degrade02")
+![degrade03]("imagens/disco cover01.png" "Degrade03")
+![degrade04]("imagens/disco cover01.png" "Degrade04")
+![degrade05]("imagens/disco cover01.png" "Degrade05")
+![degrade06]("imagens/disco cover01.png" "Degrade06")
+![degrade07]("imagens/disco cover01.png" "Degrade07")
+![degrade08]("imagens/disco cover01.png" "Degrade08")
+![degrade09]("imagens/disco cover01.png" "Degrade09")
+![degrade10]("imagens/disco cover01.png" "Degrade10")
+
 
 # instalação
 para instalar, basta fazer: ```make instalar```, para remover, basta fazer: ```make desinstalar```, ele instalará em sua versão de gimp 2.*, não para a versão 1 e nem a 3, para o novo gimp, são necessários alguns testes adicionais, ele funciona, mas quebra, a versão recente solicita retornos de função inexistentes.
