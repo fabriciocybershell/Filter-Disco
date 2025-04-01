@@ -31,7 +31,10 @@ Exemplos de antes (Imagem em escala de cinza) e depois (com filtro aplicado), fu
 Para encontrar o plugin, navege até: ``` Filtros > 90's Style > Disco Cover```
 A forma de usar está meio confusa, mas é devido a algumas limitações quanto ao Script-fu que ainda será contornada.
 Exemplificando:
-<img src="tutorial/menu.png" width="50%">
+<p>
+	<img src="tutorial/menu.png" width="50%">
+</p>
+
 a primeira seleção serve para você escolher entre todos os gradientes do gimp, incluindo os da extenção, porém, o input (Gradiente Personalizado) "```Selecione um gradiente personalizado```" agrupa apenas os criados para serem utilizados com esta extenção, se você selecionar algum deles, o Script irá ignorar a seleção do primeiro input (Gradiente), se você deixar o Gradiente personalizado selecionado na primeira opção "```Selecione um gradiente personalizado```", ele vai levar em consideração a seleção livre do primeiro input de gradiente.
 a opção: "```Gradiente Reverso```" inverte a ordem de remapeamento de cores, a forma fáil dele fazer isso é inverter a cor da imagem de cópia original, e aplicar o efeito.
 
