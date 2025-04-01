@@ -8,18 +8,7 @@ este script é um Plug-in que serve para que outras pessoas possam aplicar minha
 o script anota as suas etapas no histórico de desfazer, e as mudanças são realizadas iguais a um procedimento feito manualmente, isso te permite estudar como o efeito é criado, e também a modificar e ajustar o efeito após ser aplicado, alterando os níveis de oparcidade da camada de "Poeira", alterar seu modo de camada, e até mesmo a da camada "Disco Cover", mesclando as cores remapeadas com os tons da original.
 
 Exeplos de antes (Imagem em ecala de cinza) e depois (com filtro aplicado), funciona com imagens coloridas normalmente:
-<img src="imagens/disco_cover.png" width="300px">
-![degrade01]("imagens/disco cover01.png" "Degrade01")
-![degrade02]("imagens/disco cover01.png" "Degrade02")
-![degrade03]("imagens/disco cover01.png" "Degrade03")
-![degrade04]("imagens/disco cover01.png" "Degrade04")
-![degrade05]("imagens/disco cover01.png" "Degrade05")
-![degrade06]("imagens/disco cover01.png" "Degrade06")
-![degrade07]("imagens/disco cover01.png" "Degrade07")
-![degrade08]("imagens/disco cover01.png" "Degrade08")
-![degrade09]("imagens/disco cover01.png" "Degrade09")
-![degrade10]("imagens/disco cover01.png" "Degrade10")
-
+<img src="images/disco_cover.png" width="300px"><img src="images/disco cover01.png" width="300px"><img src="images/disco cover01.png" width="300px"><img rc="images/disco cover01.png" width="300px"><img src="images/disco cover01.png" width="300px"><img src="images/disco cover01.png" width="300px"><img src="images/disco cover01.png" width="300px"><img src="images/disco cover01.png" width="300px"><img src="images/disco cover01.png" width="300px"><img src="images/disco cover01.png" width="300px"><img src="images/disco cover01.png" width="300px">
 
 
 # instalação
