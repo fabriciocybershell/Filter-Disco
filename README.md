@@ -30,7 +30,7 @@ Exemplos de antes (Imagem em escala de cinza) e depois (com filtro aplicado), fu
 # instalação
 para instalar, basta fazer: ```make instalar```, para remover, basta fazer: ```make desinstalar```, ele instalará em sua versão de gimp 2.*, não para a versão 1 e nem a 3, para o novo gimp, são necessários alguns testes adicionais, ele funciona, mas quebra, a versão recente solicita retornos de função inexistentes.
 # instalação manual:
-primeiro você deve mover os gradientes para o seu gimp, sem eles os gradientes que criei especialmente para este script não irão funcionar (pesar dele permitir você selecionar qualquer gradiente disponível pelo gimp).
+primeiro você deve mover os gradientes para o seu gimp, sem eles os gradientes que criei especialmente para este script não irão funcionar (apesar dele permitir você selecionar qualquer gradiente disponível pelo gimp).
 mova para o diretório relacionado ao seu sistema, para Linux:
 ```${HOME}/.config/GIMP/version/gradients/```
 para adicionar os scripts, você pode utilizar um diretório a sua escolha, ou usar o diretório padrão do gimp em:
