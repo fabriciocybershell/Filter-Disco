@@ -9,17 +9,23 @@ o script anota as suas etapas no histórico de desfazer, e as mudanças são rea
 
 Exeplos de antes (Imagem em ecala de cinza) e depois (com filtro aplicado), funciona com imagens coloridas normalmente:
 <p>
-	<img src="images/disco_cover.png" width="10%">
-	<img src="images/disco cover01.png" width="10%">
-	<img src="images/disco cover02.png" width="10%">
-	<img src="images/disco cover03.png" width="10%">
-	<img src="images/disco cover04.png" width="10%">
-	<img src="images/disco cover05.png" width="10%">
-	<img src="images/disco cover06.png" width="10%">
-	<img src="images/disco cover07.png" width="10%">
-	<img src="images/disco cover08.png" width="10%">
-	<img src="images/disco cover09.png" width="10%">
-	<img src="images/disco cover10.png" width="10%">	
+	<img src="images/disco_cover.png" width="30%">
+	<img src="images/disco cover01.png" width="30%">
+	<img src="images/disco cover02.png" width="30%">
+</p>
+<p>
+	<img src="images/disco cover03.png" width="30%">
+	<img src="images/disco cover04.png" width="30%">
+	<img src="images/disco cover05.png" width="30%">
+</p>
+<p>
+	<img src="images/disco cover06.png" width="30%">
+	<img src="images/disco cover07.png" width="30%">
+	<img src="images/disco cover08.png" width="30%">
+</p>
+<p>
+	<img src="images/disco cover09.png" width="30%">
+	<img src="images/disco cover10.png" width="30%">	
 </p>
 
 # instalação
