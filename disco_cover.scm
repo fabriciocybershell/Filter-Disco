@@ -68,18 +68,18 @@
 )
 
 (script-fu-register
-    "Script-fu-filter-disco"                       ;nome da função
-    "Disco Cover"                                  ;nome da ferramenta
-    "Cria um efeito de capa de disco dos anos 80 e 90."    ;descrição
-    "fabriciocybershell"                           ;autor
-    "copyright 2025, Fabrício"                     ;copyright notice
-    "March 19, 2025"                               ;data de criação
-    "RGB*"                                         ;tipos de imagens suportadas
-    SF-IMAGE       "Image"            0            ; obtém a imagem atual
-    SF-DRAWABLE    "Current Layer"    0            ; obtém a camada atual
-    SF-GRADIENT    "Gradiente"           "degrade01"  ; "Incandescent"
-    SF-TOGGLE      "Gradiente Reverso" FALSE        ; informa se o gradiente deve ser aplicado de trás para frente
-    SF-OPTION      "Gradiente Personalizado"            '("Selecione um gradiente personalizado" "degrade01" "degrade02" "degrade03" "degrade04" "degrade05"  "degrade06"  "degrade07"  "degrade08"  "degrade09"  "degrade10") ; lista de gradientes personalizados
+    "Script-fu-filter-disco"                            ;nome da função
+    "Disco Cover"                                       ;nome da ferramenta
+    "Cria um efeito de capa de disco dos anos 80 e 90." ;descrição
+    "fabriciocybershell"                                ;autor
+    "copyright 2025, Fabrício"                          ;copyright notice
+    "March 19, 2025"                                    ;data de criação
+    "RGB*"                                              ;tipos de imagens suportadas
+    SF-IMAGE       "Image"             0                 ; obtém a imagem atual
+    SF-DRAWABLE    "Current Layer"     0                 ; obtém a camada atual
+    SF-GRADIENT    "Gradiente"         "degrade01"    ; "Incandescent"
+    SF-TOGGLE      "Gradiente Reverso" FALSE            ; informa se o gradiente deve ser aplicado de trás para frente
+    SF-OPTION      "Gradiente Personalizado"            '("Selecione um gradiente personalizado" "degrade01" "degrade02" "degrade03" "degrade04" "degrade05"  "degrade06"  "degrade07"  "degrade08"  "degrade09"  "degrade10" "degrade11") ; lista de gradientes personalizados
 )
 
 (script-fu-menu-register "Script-fu-filter-disco" "<Image>/Filters/90's Style")
