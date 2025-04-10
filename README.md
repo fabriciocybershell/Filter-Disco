@@ -25,6 +25,7 @@ Exemplos de antes (Imagem em escala de cinza) e depois (com filtro aplicado), fu
 	<img src="images/disco cover08.png" width="20%">
 	<img src="images/disco cover09.png" width="20%">
 	<img src="images/disco cover10.png" width="20%">	
+	<img src="images/disco cover11.png" width="20%">	
 </p>
 
 ### Modo de acesso e uso:
